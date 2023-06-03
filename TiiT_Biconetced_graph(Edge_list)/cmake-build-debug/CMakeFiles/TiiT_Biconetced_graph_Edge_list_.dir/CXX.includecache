@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Volumes/USB FLASH/Asus-ZenBook/CLionProjects/TiiT_Biconetced_graph(Edge_list)/main.cpp
+iostream
+-
+vector
+-
+set
+-
+

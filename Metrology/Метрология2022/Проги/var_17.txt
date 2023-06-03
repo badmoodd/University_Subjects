@@ -1,0 +1,45 @@
+﻿#include <iostream>
+#include <cmath>
+#include <iomanip>
+
+using namespace std;
+
+void tabl(double&, double&, double&, double&); 
+double y(double&);
+double s(double&, double&, int&);
+
+int main() 
+                           {
+double a = -0.9, b = 0.7, h = (b - a) / 10, eps = 0.00001;
+tabl(a, b, h, eps);
+return 0;
+}
+
+void tabl(double& a, double& b, double& h, double& eps) // Пользовательская фукнция
+{
+int k = 0;
+cout « setw(6) « "x" « setw(17) « "y(x)" « setw(14) « "sum" « endl;
+for (double x = a; x < b + h / 2; x += h) 
+{
+cout « setw(8) « fixed « x « setw(15) « y(x) « setw(15) « s(x, eps, k) « endl; // Вывод сообщения
+}
+}
+
+double y(double& x) // Пользовательская функция
+ {
+return x * atan(x);
+}
+
+double s(double& x, double& eps, int& k)
+ {
+k = 0;
+double rekur, sum;
+sum = rekur = pow(x, 2);
+while (fabs(rekur) > eps)
+ {
+k++;
+rekur *= -pow(x, 2);
+sum += rekur / (1 + 2.*k);
+}
+return sum;
+}

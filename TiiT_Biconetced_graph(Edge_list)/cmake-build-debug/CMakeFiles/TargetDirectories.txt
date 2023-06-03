@@ -1,0 +1,3 @@
+/Volumes/USB FLASH/Asus-ZenBook/CLionProjects/TiiT_Biconetced_graph(Edge_list)/cmake-build-debug/CMakeFiles/TiiT_Biconetced_graph_Edge_list_.dir
+/Volumes/USB FLASH/Asus-ZenBook/CLionProjects/TiiT_Biconetced_graph(Edge_list)/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Volumes/USB FLASH/Asus-ZenBook/CLionProjects/TiiT_Biconetced_graph(Edge_list)/cmake-build-debug/CMakeFiles/rebuild_cache.dir

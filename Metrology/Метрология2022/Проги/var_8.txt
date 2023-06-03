@@ -1,0 +1,46 @@
+#include <iostream.h>
+#include <iomanip.h>
+main()
+{
+
+	char a[100];
+
+	char mas[26]={'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
+          int  i,k,j,n;
+			n=0;
+			
+	cout<<"Vvedite koli4estvo bukv "<<endl; // Вывод сообщения
+          cin>>k;
+		  
+	cout<<"Vvedite elementi massiva-kagdyu bykvy"<<endl; // Вывод сообщения
+          for(i=0;i<k;i++)
+	{
+	
+	    cout<<"a["<<i+1<<"]= "; // Вывод сообщения
+              cin>>a[i];
+			  
+	}
+	
+           for(i=0;i<26;i++)
+
+
+	{	
+  
+	for(j=0;j<26;j++)	
+          if(a[j]==mas[i])
+		  {
+		  
+			  if (n>=26) break; // Выход из цикла
+				  
+              cout<<mas[i]<<setw(4);  // Вывод сообщения
+			  mas[i]=' ';
+			  n++;
+		  }   
+		  
+		   }
+
+	cout<<" programa zavershena  ";
+	
+          return 0 
+		  
+		  }

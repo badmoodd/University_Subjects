@@ -1,0 +1,38 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int fact = 1;
+    
+    int n = 0;
+
+    cout << "n: "; // Вывод сообщения
+    cin >> n;  // Ввод n
+
+    for (int i = 1; i < n+1; i++)
+    {
+        fact *= i;
+    }
+    
+    cout<<"\n" << fact; // Вывод сообщения
+
+    int fibsum = 0;
+    int fb = 0;
+    int f1=1, f2=1;
+
+    cout <<"\n"<< "fb: ";  // Вывод сообщения
+    cin >> fb;
+
+    for (int i = 0; i < n -2; i++)
+    {
+        fibsum = f1 + f2;
+        f1 = f2;
+        f2 = fibsum;
+    }
+
+    cout << fibsum;
+
+    return 0;
+}

@@ -1,0 +1,105 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3023,         95]
+NotebookOptionsPosition[      2457,         77]
+NotebookOutlinePosition[      2850,         93]
+CellTagsIndexPosition[      2807,         90]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"a1", "=", " ", 
+   RowBox[{"{", 
+    RowBox[{"4.2", ",", 
+     RowBox[{"-", "1"}], ",", "7", ",", "1.3"}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"a2", "=", 
+   RowBox[{"{", 
+    RowBox[{"2.1", ",", "3.4", ",", "1.8"}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"a3", "=", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"-", "0.4"}], ",", 
+      RowBox[{"-", "0.6"}], ",", "0.1"}], "}"}]}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"a1", "+", "a2"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"b", " ", "=", " ", 
+   RowBox[{"{", 
+    RowBox[{"2.8", ",", "1.1", ",", 
+     RowBox[{"-", "0.6"}]}], "}"}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.87640845575634*^9, 3.876408492564067*^9}},
+ CellLabel->"In[10]:=",ExpressionUUID->"16f209b8-dfbc-4a7b-bd09-d872746064fb"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Thread", "tdlen", 
+   "\"Objects of unequal length in \\!\\(\\*RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{\\\"4.2`\\\", \\\",\\\", RowBox[{\\\"-\\\", \\\"1\\\"}], \\\",\\\", \
+\\\"7\\\", \\\",\\\", \\\"1.3`\\\"}], \\\"}\\\"}], \\\"+\\\", RowBox[{\\\"{\\\
+\", RowBox[{\\\"2.1`\\\", \\\",\\\", \\\"3.4`\\\", \\\",\\\", \\\"1.8`\\\"}], \
+\\\"}\\\"}]}]\\) cannot be combined.\"", 2, 13, 11, 26509098520547692774, 
+   "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.876408496859729*^9},
+ CellLabel->
+  "During evaluation of \
+In[10]:=",ExpressionUUID->"63400ec9-595f-4af8-80a3-515ce126cd85"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"{", 
+   RowBox[{"2.1`", ",", "3.4`", ",", "1.8`"}], "}"}], "+", 
+  RowBox[{"{", 
+   RowBox[{"4.2`", ",", 
+    RowBox[{"-", "1"}], ",", "7", ",", "1.3`"}], "}"}]}]], "Output",
+ CellChangeTimes->{3.876408496864852*^9},
+ CellLabel->"Out[13]=",ExpressionUUID->"23b9aa25-4493-4e58-a5a8-4f5bbe608847"]
+}, Open  ]]
+},
+WindowSize->{808, 897},
+WindowMargins->{{Automatic, 327}, {44, Automatic}},
+FrontEndVersion->"12.3 for Mac OS X ARM (64-bit) (July 9, 2021)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"81f1af2d-0001-4cc5-95d7-c5adc86df26f"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 889, 27, 136, "Input",ExpressionUUID->"16f209b8-dfbc-4a7b-bd09-d872746064fb"],
+Cell[1472, 51, 636, 13, 28, "Message",ExpressionUUID->"63400ec9-595f-4af8-80a3-515ce126cd85"],
+Cell[2111, 66, 330, 8, 34, "Output",ExpressionUUID->"23b9aa25-4493-4e58-a5a8-4f5bbe608847"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

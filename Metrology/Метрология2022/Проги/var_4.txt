@@ -1,0 +1,28 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int numArr[1000], cnt;
+
+void BubbleSort();
+
+int main()
+{
+BubbleSort(); // Вызов пользователькой функции
+	cout << "Array sorted using a \"bubble\" sort:" << endl;
+	for (int i = 0; i < cnt; i++) {
+		cout << numArr[i] << " ";
+	}
+	cout << endl;
+}
+
+void BubbleSort() {  // Сортировка массива
+	for (int j = 0; j < cnt; j++) {
+		for (int i = 0; i < cnt - 1; i++) {
+			if (numArr[i] > numArr[i + 1]) {  
+				int temp = numArr[i];  // Доп переменная
+				numArr[i] = numArr[i + 1];
+				numArr[i + 1] = temp;
+			}
+		}
