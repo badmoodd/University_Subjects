@@ -1,0 +1,78 @@
+firstLab=[*
+sc_node_class -> concept_triangle;;
+sc_node_class -> concept_isosceles_triangle;;
+sc_node_class -> concept_circle;;
+sc_node_class -> concept_segment;;
+sc_node_class -> concept_geometric_point;;
+sc_node_class -> concept_15sm;;
+sc_node_class -> concept_10sm;;
+sc_node_class -> concept_1sm;;
+sc_node_class -> concept_number;;
+sc_node_class -> concept_accurate_value;;
+sc_node_class -> concept_length;;
+sc_node_class -> concept_measurement_with_fixed_unit_of_measure;;
+
+concept_isosceles_triangle -> triangle_M_N_L;;
+concept_circle -> circle_O_OK;;
+concept_segment -> AK;;
+concept_segment -> OK;;
+concept_segment -> ML;;
+concept_segment -> MN;;
+concept_segment -> LN;;
+concept_segment -> MK;;
+concept_segment -> KN;;
+concept_segment -> AN;;
+concept_segment -> LA;;
+concept_10sm -> AN;;
+concept_10sm -> KN;;
+concept_15sm -> LA;;
+concept_15sm -> MK;;
+concept_number -> 10;;
+concept_number -> 15;;
+
+concept_geometric_point -> A;;
+concept_geometric_point -> K;;
+concept_length -> concept_1sm;;
+concept_length -> concept_10sm;;
+concept_length -> concept_15sm;;
+
+concept_triangle => nrel_inclusion: concept_isosceles_triangle;;
+nrel_inclusion <- sc_node_norole_relation;;
+
+triangle_M_N_L => nrel_be_inscribed: circle_O_OK;;
+nrel_be_inscribed <- sc_node_norole_relation;;
+
+circle_O_OK => nrel_chord: AK;;
+nrel_chord <- sc_node_norole_relation;;
+
+circle_O_OK => nrel_radius: OK;;
+nrel_raduis <- sc_node_norole_relation;;
+
+triangle_M_N_L => nrel_sides: LN;;
+triangle_M_N_L => nrel_sides: MN;;
+nrel_sides <- sc_node_norole_relation;;
+
+triangle_M_N_L => nrel_base: ML;;
+nrel_base <- sc_node_norole_relation;;
+
+LN -> A;;
+MN -> k;;
+
+concept_10sm => nrel_measuring_in_sm: 10;;
+concept_10sm => nrel_measuring_in_sm: 15;;
+nrel_measuring_in_sm <- sc_node_norole_relation;;
+
+nrel_measuring_in_sm => nrel_unit: concept_1sm;;
+nrel_unit <- c_node_norole_relation;;
+
+
+{AN; LA}
+  =>  nrel_segmentation: LN;;
+nrel_segmentation <- sc_node_norole_relation;;
+
+{KN; MK}
+  => nrel_segmentation: MN;;
+
+nrel_segmentation <- sc_node_norole_relation;;
+
+*];;

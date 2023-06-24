@@ -1,0 +1,60 @@
+SecondLab1=[*
+    sc_node_class -> concept_connected_graph;;
+    sc_node_class -> concept_graph;;
+    sc_node_class -> concept_connectivity_component;;
+    sc_node_class -> concept_cycle;;
+    sc_node_class -> concept_tree;;
+    sc_node_norole_relation -> nrel_inclusion;;
+    sc_node_norole_relation -> nrel_point;;
+    sc_node_norole_relation -> nrel_line;;
+    sc_node_norole_relation -> nrel_lenght;;
+
+    concept_connected_graph => nrel_main_idtf:
+        [связный граф]
+        (* <- lang_ru;; *);;
+    
+    concept_connected_graph => nrel_main_idtf:
+        [connected_graph]
+        (* <- lang_en;; *);;
+
+
+    definition->...
+    (*
+        ->rrel_key_sc_element: concept_connected_graph;;
+        <=nrel_sc_text_translation:...
+        (*
+            ->[Связный граф - это граф, содержащий только одну компоненту связности](*<-lang_ru;;*);;
+        *);;
+        => nrel_main_idtf:
+            [Опр. Связный граф]
+            (* <- lang_ru;; *);;
+        => nrel_using_constants:
+        {
+            concept_graph(*<-sc_node_class;;*);
+            concept_connectivity_component(*<-sc_node_class;;*)
+        };;
+    *);;
+
+    statement->...
+    (*
+        ->rrel_key_sc_element:concept_connected_graph;;
+        <=nrel_sc_text_translation:...
+        (*
+            ->[Связный граф, не содержащий ни одного цикла называется деревом](*<-lang_ru;;*);;
+        *);;
+        => nrel_main_idtf:
+            [Утв. 1 О связном графе]
+            (* <- lang_ru;; *);;
+
+        =>nrel_using_constants:
+        {
+            concept_tree(*<-sc_node_class;;*);
+            concept_cycle(*<-sc_node_class;;*)
+        };;
+    *);;
+
+
+    concept_graph => nrel_inclusion: concept_connected_graph;;
+
+
+*];;
